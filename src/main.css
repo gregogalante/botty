@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/** Custom tailwindcss card component */
+
+.card {
+  @apply bg-gray-200 shadow-md rounded-lg p-4 mb-4;
+}
+
+.card-title {
+  @apply text-xl font-bold mb-4;
+}
+
+.card-data {
+  @apply grid grid-cols-5 gap-4;
+}
+
+.card-data-item {
+  @apply flex flex-col items-center bg-gray-300 p-2 rounded-lg;
+}
+
+.card-data-item div:first-child {
+  @apply text-gray-600;
+}
+
+.card-data-item div:last-child {
+  @apply font-bold;
+}
+
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 cursor-pointer;
+}
+
+.btn-red {
+  @apply bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700 cursor-pointer;
+}
+
+.btn-green {
+  @apply bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-700 cursor-pointer;
+}
